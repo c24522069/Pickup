@@ -12,7 +12,6 @@ import com.example.pickup.ui.theme.PickupTheme
 
 // Single activity: every screen is a composable inside AppNavHost.
 // Database set-up adapted from MainActivity (Lab 8).
-// Reference: GenAi see prompt(s) (1) in report
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

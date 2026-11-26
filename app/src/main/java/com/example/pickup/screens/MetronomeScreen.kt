@@ -12,9 +12,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.example.pickup.R
 
-// PLACEHOLDER (stage 2): the metronome tab. Not in the design's file tree;
-// added when the metronome was given its own tab (design change).
-// Reference: GenAi see prompt(s) (2) in report
+// Metronome tab: shows a heading and a short message for now.
 @Composable
 fun MetronomeScreen(modifier: Modifier = Modifier) {
     Column(

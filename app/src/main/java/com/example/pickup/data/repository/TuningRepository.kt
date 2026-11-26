@@ -9,7 +9,6 @@ import kotlinx.coroutines.flow.Flow
 // Sits between the ViewModels and the DAOs. The labs pass the DAO straight to
 // the ViewModel; this extra layer is from the app's design document.
 // Reference: https://developer.android.com/topic/architecture/data-layer
-// Reference: GenAi see prompt(s) (1) in report
 class TuningRepository(
     private val tuningDao: TuningDao,
     private val songDao: SongDao

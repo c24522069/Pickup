@@ -8,7 +8,6 @@ import org.junit.Test
 import java.time.LocalDate
 
 // Unit tests for the practice log stats (run on the computer, no phone needed).
-// Reference: GenAi see prompt(s) (2) in report
 class PracticeStatsTest {
     // Thursday 26 November 2026; that week starts on Monday 23 November
     private val today = LocalDate.of(2026, 11, 26)

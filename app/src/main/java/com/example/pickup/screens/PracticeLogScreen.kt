@@ -48,7 +48,6 @@ import java.time.format.FormatStyle
 // List screen populated from Room. LazyColumn + collectAsStateWithLifecycle
 // adapted from Screen3 (Lab 8); FAB from AppContent (ThemeDemo lab);
 // snackbar from MainActivity (Lab 8).
-// Reference: GenAi see prompt(s) (2) in report
 @Composable
 fun PracticeLogScreen(
     viewModel: PracticeLogViewModel,
@@ -150,7 +149,7 @@ private fun dayLabel(day: LocalDate): String {
     return when (day) {
         today -> stringResource(R.string.today)
         today.minusDays(1) -> stringResource(R.string.yesterday)
-        // Formats the date in the phone's language, e.g. "26 Nov 2026"
+        // Formats the date in the phone's language and date style
         else -> day.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.MEDIUM))
     }
 }

@@ -41,7 +41,7 @@
     <string name="tune_to_this">Tune to this</string>
     <string name="log_practice">Log practice</string>
 
-    <!-- Tuner and metronome (placeholders until stages 3 and 4) -->
+    <!-- Tuner and metronome -->
     <string name="tuner_title">Tuner</string>
     <string name="string_target">String %1$d · target %2$.1f Hz</string>
     <string name="pluck_any_string">Pluck any string</string>

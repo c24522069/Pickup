@@ -14,7 +14,6 @@ import kotlin.math.sqrt
 // Reference: A. de Cheveigné and H. Kawahara, "YIN, a fundamental frequency
 //   estimator for speech and music", J. Acoust. Soc. Am. 111(4), 1917-1930, 2002.
 //   https://doi.org/10.1121/1.1458024
-// Reference: GenAi see prompt(s) (4) in report
 class PitchDetector(
     private val sampleRate: Int,
     private val minFrequency: Float = 60f,   // below a low C (65 Hz), for drop tunings

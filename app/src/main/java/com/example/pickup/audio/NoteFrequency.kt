@@ -8,7 +8,6 @@ import kotlin.math.pow
 // Formula: f = 440 * 2^((n - 69) / 12), where n is the MIDI note number (A4 = 69).
 // Reference: https://en.wikipedia.org/wiki/MIDI_tuning_standard
 // Reference: https://en.wikipedia.org/wiki/Cent_(music)
-// Reference: GenAi see prompt(s) (4) in report
 object NoteFrequency {
     private val semitones = mapOf(
         "C" to 0, "C#" to 1, "Db" to 1, "D" to 2, "D#" to 3, "Eb" to 3,

@@ -43,7 +43,6 @@ private enum class TriedFilter(val labelRes: Int) {
 
 // List screen. LazyColumn of Room data as in Screen3 (Lab 8), FilterChips as
 // in ActivitiesScreen (Lab 4).
-// Reference: GenAi see prompt(s) (2) in report
 @Composable
 fun TuningLibraryScreen(
     viewModel: TuningViewModel,

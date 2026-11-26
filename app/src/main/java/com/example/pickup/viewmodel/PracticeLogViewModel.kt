@@ -40,7 +40,6 @@ fun millisToDate(millis: Long): LocalDate =
 // Plain function (no Android code), so it can be unit tested.
 // Streak: consecutive days with practice, ending today (or yesterday if
 // today has nothing logged yet). Week: Monday to today.
-// Reference: GenAi see prompt(s) (2) in report
 fun calculateStats(sessions: List<PracticeSessionEntity>, today: LocalDate): PracticeStats {
     val practisedDays = sessions.map { millisToDate(it.date) }.toSet()
 
@@ -62,7 +61,6 @@ fun calculateStats(sessions: List<PracticeSessionEntity>, today: LocalDate): Pra
 // Adapted from NoteViewModel.kt (Lab 8), extended with update and the
 // combined list. combine() is not in the labs.
 // Reference: https://kotlinlang.org/docs/flow.html#combine
-// Reference: GenAi see prompt(s) (2) in report
 class PracticeLogViewModel(
     private val practiceRepository: PracticeRepository,
     tuningRepository: TuningRepository

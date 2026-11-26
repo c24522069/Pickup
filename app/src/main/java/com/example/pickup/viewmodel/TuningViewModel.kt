@@ -18,7 +18,6 @@ import kotlinx.coroutines.launch
 
 // Adapted from NoteViewModel.kt (Lab 8): Flows from Room, writes in
 // viewModelScope.launch, errors reported through a StateFlow, and a Factory.
-// Reference: GenAi see prompt(s) (2) in report
 class TuningViewModel(
     private val tuningRepository: TuningRepository,
     practiceRepository: PracticeRepository

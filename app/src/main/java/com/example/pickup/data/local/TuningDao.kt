@@ -5,7 +5,6 @@ import androidx.room.Query
 import kotlinx.coroutines.flow.Flow
 
 // Adapted from NoteDao.kt (Lab 6/8). Flow re-emits when the table changes.
-// Reference: GenAi see prompt(s) (1) in report
 @Dao
 interface TuningDao {
     @Query("SELECT * FROM tunings ORDER BY id ASC")

@@ -54,7 +54,6 @@ import com.example.pickup.data.local.scaleList
 import com.example.pickup.viewmodel.TuningViewModel
 
 // Extra screen: one tuning's strings, songs, scales and chord progressions.
-// Reference: GenAi see prompt(s) (2) in report
 @Composable
 fun TuningDetailScreen(
     tuningId: Int,

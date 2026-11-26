@@ -18,7 +18,6 @@ import kotlinx.coroutines.isActive
 // samples (values from -1 to 1) for the PitchDetector. Not covered in the labs.
 // Reference: https://developer.android.com/reference/android/media/AudioRecord
 // Reference: https://developer.android.com/reference/android/media/MediaRecorder.AudioSource
-// Reference: GenAi see prompt(s) (4) in report
 class AudioInput(private val context: Context) {
 
     companion object {

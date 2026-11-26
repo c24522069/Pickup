@@ -31,7 +31,6 @@ abstract class AppDatabase : RoomDatabase() {
 
         // onCreate runs only the first time, after Room has made the tables.
         // Reference: https://developer.android.com/reference/androidx/room/RoomDatabase.Callback
-        // Reference: GenAi see prompt(s) (1) in report
         private val preloadCallback = object : RoomDatabase.Callback() {
             override fun onCreate(db: SupportSQLiteDatabase) {
                 // Tunings go first because songs have a foreign key to them.

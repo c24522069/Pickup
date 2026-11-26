@@ -7,7 +7,6 @@ import androidx.room.PrimaryKey
 
 // Adapted from Note.kt (Lab 6/8 Room). The foreign keys are not in the labs.
 // Reference: https://developer.android.com/reference/androidx/room/ForeignKey
-// Reference: GenAi see prompt(s) (1) in report
 @Entity(
     tableName = "practice_sessions",
     foreignKeys = [

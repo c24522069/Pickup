@@ -57,7 +57,6 @@ import kotlinx.serialization.Serializable
 // Type-safe Navigation Compose is not in the labs (Week 4 uses an enum + when).
 // Reference: https://developer.android.com/guide/navigation/use-graph/navigate
 // Reference: https://developer.android.com/develop/ui/compose/navigation
-// Reference: GenAi see prompt(s) (2) in report
 @Serializable object TuningsGraph
 @Serializable object TuningList
 @Serializable data class TuningDetail(val tuningId: Int)

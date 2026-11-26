@@ -62,7 +62,6 @@ private const val MAX_NOTE_LENGTH = 200
 // Input screen for a new session (sessionId == null) or an existing one.
 // Form state uses rememberSaveable as in ActivitiesScreen (Lab 4), so it
 // survives rotation; the Slider is adapted from the same screen.
-// Reference: GenAi see prompt(s) (2) in report
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun AddEditSessionScreen(

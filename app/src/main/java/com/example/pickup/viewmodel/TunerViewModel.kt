@@ -40,7 +40,6 @@ data class TunerUiState(
 
 // Holds the tuner state so it survives rotation, and runs the microphone
 // loop in viewModelScope (the same scope the labs use for Room writes).
-// Reference: GenAi see prompt(s) (4) in report
 class TunerViewModel(private val audioInput: AudioInput) : ViewModel() {
 
     private val detector = PitchDetector(AudioInput.SAMPLE_RATE)

@@ -70,7 +70,6 @@ private const val CLOSE_CENTS = 20f
 
 // Tuner screen: listens through the microphone and shows how far the
 // string is from its target note.
-// Reference: GenAi see prompt(s) (4) in report
 @Composable
 fun TunerScreen(
     tuningViewModel: TuningViewModel,

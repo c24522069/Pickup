@@ -8,7 +8,6 @@ import androidx.room.Update
 import kotlinx.coroutines.flow.Flow
 
 // Adapted from NoteDao.kt (Lab 6/8). @Update is from the Week 8 Room lecture.
-// Reference: GenAi see prompt(s) (1) in report
 @Dao
 interface PracticeSessionDao {
     // Newest first, for the practice log

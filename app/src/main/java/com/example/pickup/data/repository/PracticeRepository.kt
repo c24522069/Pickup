@@ -6,7 +6,6 @@ import kotlinx.coroutines.flow.Flow
 
 // Sits between the ViewModels and the DAO (see TuningRepository).
 // Reference: https://developer.android.com/topic/architecture/data-layer
-// Reference: GenAi see prompt(s) (1) in report
 class PracticeRepository(private val dao: PracticeSessionDao) {
     val sessions: Flow<List<PracticeSessionEntity>> = dao.observeSessions()
     val triedTuningIds: Flow<List<Int>> = dao.observeTriedTuningIds()

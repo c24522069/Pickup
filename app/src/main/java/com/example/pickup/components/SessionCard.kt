@@ -21,7 +21,6 @@ import com.example.pickup.viewmodel.SessionListItem
 
 // One practice session in the log. Card layout adapted from the
 // SavedNotesScreen card (Simple Notes demo, Week 8).
-// Reference: GenAi see prompt(s) (2) in report
 @Composable
 fun SessionCard(
     item: SessionListItem,

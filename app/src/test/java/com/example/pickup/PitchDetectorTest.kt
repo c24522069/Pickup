@@ -13,7 +13,6 @@ import kotlin.math.sin
 import kotlin.random.Random
 
 // Tests the tuner maths with made-up signals, so no microphone is needed.
-// Reference: GenAi see prompt(s) (4) in report
 class PitchDetectorTest {
     private val rate = AudioInput.SAMPLE_RATE
     private val detector = PitchDetector(rate)

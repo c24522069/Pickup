@@ -31,7 +31,6 @@ private const val MAX_CENTS = 50f
 // turns green when the string is in tune.
 // Reference: https://developer.android.com/develop/ui/compose/graphics/draw/overview
 // Reference: https://developer.android.com/develop/ui/compose/animation/value-based
-// Reference: GenAi see prompt(s) (4) in report
 @Composable
 fun TunerNeedle(
     cents: Float,

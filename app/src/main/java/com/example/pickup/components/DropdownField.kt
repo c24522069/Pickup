@@ -20,7 +20,6 @@ import androidx.compose.ui.Modifier
 // Not covered in the labs.
 // Reference: https://developer.android.com/develop/ui/compose/components/menu
 // Reference: https://developer.android.com/reference/kotlin/androidx/compose/material3/ExposedDropdownMenuBoxScope
-// Reference: GenAi see prompt(s) (2) in report
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun <T> DropdownField(

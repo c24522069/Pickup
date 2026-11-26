@@ -2,7 +2,6 @@ package com.example.pickup.data.local
 
 // Starting content, inserted once when the database is first created.
 // The ids are fixed here so each song can point at its tuning.
-// Reference: GenAi see prompt(s) (1) in report
 object SeedData {
     val tunings = listOf(
         TuningEntity(1, "Standard", "E2 A2 D3 G3 B3 E4", "E minor pentatonic;G major", "G D Em C;Am F C G"),
