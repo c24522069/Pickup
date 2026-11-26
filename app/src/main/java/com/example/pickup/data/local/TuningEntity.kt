@@ -17,3 +17,15 @@ data class TuningEntity(
     val scales: String,
     val chordProgressions: String
 )
+
+// Helpers that split the stored text back into lists for the screens.
+// "D2 A2 D3" -> ["D", "A", "D"] (the octave number is only needed by the tuner)
+val TuningEntity.noteNames: List<String>
+    get() = stringNotes.split(" ").map { note -> note.dropLastWhile { it.isDigit() } }
+
+val TuningEntity.scaleList: List<String>
+    get() = scales.split(";")
+
+// "D G A;D C G" -> [["D", "G", "A"], ["D", "C", "G"]]
+val TuningEntity.progressionList: List<List<String>>
+    get() = chordProgressions.split(";").map { it.split(" ") }

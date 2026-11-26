@@ -28,7 +28,7 @@ import androidx.room.PrimaryKey
 )
 data class PracticeSessionEntity(
     @PrimaryKey(autoGenerate = true) val id: Int = 0,
-    val date: Long, // milliseconds since 1970 (epoch)
+    val date: Long, // midnight UTC of the chosen day, in epoch milliseconds
     val durationMinutes: Int,
     val note: String,
     val tuningId: Int,

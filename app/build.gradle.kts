@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.compose)
     alias(libs.plugins.ksp)
+    alias(libs.plugins.kotlin.serialization) // type-safe navigation routes
 }
 
 android {
@@ -47,6 +48,14 @@ dependencies {
     implementation(libs.androidx.compose.ui.tooling.preview)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
+    // ViewModels and collectAsStateWithLifecycle (as in Lab 8)
+    implementation(libs.androidx.lifecycle.viewmodel.compose)
+    implementation(libs.androidx.lifecycle.runtime.compose)
+    // Bottom bar (Week 4 NavApp) and icons (ThemeDemo lab)
+    implementation(libs.androidx.compose.material3.adaptive.navigation.suite)
+    implementation(libs.androidx.compose.material.icons.extended)
+    // Navigation Compose for screens that need an id and a back stack
+    implementation(libs.androidx.navigation.compose)
     // Room database (same setup as Lab 8)
     implementation(libs.androidx.room.runtime)
     implementation(libs.androidx.room.ktx)

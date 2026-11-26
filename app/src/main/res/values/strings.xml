@@ -1,3 +1,80 @@
 <resources>
     <string name="app_name">Pickup</string>
+
+    <!-- Bottom navigation -->
+    <string name="nav_tunings">Tunings</string>
+    <string name="nav_tuner">Tuner</string>
+    <string name="nav_metronome">Metronome</string>
+    <string name="nav_log">Log</string>
+
+    <!-- Shared -->
+    <string name="back">Back</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="undo">Undo</string>
+    <string name="minutes_short">%1$d min</string>
+    <string name="error_save">Could not save the change. Please try again.</string>
+
+    <!-- Tuning library -->
+    <string name="tunings_title">Tunings</string>
+    <string name="tuning_of_the_day">Tuning of the day</string>
+    <string name="try_it">Try it</string>
+    <string name="filter_all">All</string>
+    <string name="filter_tried">Tried</string>
+    <string name="filter_not_tried">Not tried</string>
+    <string name="tried">Tried</string>
+    <string name="not_tried">Not tried</string>
+    <string name="no_tunings_in_filter">No tunings here yet.</string>
+
+    <!-- Tuning detail -->
+    <string name="strings_low_to_high">Strings, low to high</string>
+    <string name="string_number_note">String %1$d: %2$s</string>
+    <string name="tab_songs">Songs</string>
+    <string name="tab_scales">Scales</string>
+    <string name="tab_chords">Chords</string>
+    <string name="no_songs">No songs for this tuning yet.</string>
+    <string name="add_favourite">Add %1$s to favourites</string>
+    <string name="remove_favourite">Remove %1$s from favourites</string>
+    <string name="find_tutorial">Find a tutorial for %1$s</string>
+    <string name="tutorial_search">%1$s %2$s guitar lesson</string>
+    <string name="no_browser">No app found to open the tutorial.</string>
+    <string name="tune_to_this">Tune to this</string>
+    <string name="log_practice">Log practice</string>
+
+    <!-- Tuner and metronome (placeholders until stages 3 and 4) -->
+    <string name="tuner_title">Tuner</string>
+    <string name="tuner_coming_soon">The microphone tuner will be added next.</string>
+    <string name="metronome_title">Metronome</string>
+    <string name="metronome_coming_soon">The metronome will be added soon.</string>
+
+    <!-- Practice log -->
+    <string name="log_title">Practice log</string>
+    <string name="stat_this_week">this week</string>
+    <string name="hours_minutes">%1$dh %2$dm</string>
+    <plurals name="streak_days">
+        <item quantity="one">%d day</item>
+        <item quantity="other">%d days</item>
+    </plurals>
+    <string name="stat_in_a_row">in a row</string>
+    <string name="today">Today</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="free_play">Free play</string>
+    <string name="no_sessions">No practice logged yet. Tap + to add your first session.</string>
+    <string name="add_session">Add practice session</string>
+    <string name="session_deleted">Session deleted</string>
+
+    <!-- Add / edit session -->
+    <string name="new_session">New session</string>
+    <string name="edit_session">Edit session</string>
+    <string name="close">Close</string>
+    <string name="label_tuning">Tuning</string>
+    <string name="label_song">Song</string>
+    <string name="label_date">Date</string>
+    <string name="choose_date">Choose date</string>
+    <string name="ok">OK</string>
+    <string name="how_long">How long?</string>
+    <string name="notes_optional">Notes (optional)</string>
+    <string name="save_session">Save session</string>
+    <string name="delete_session">Delete session</string>
+    <string name="delete_session_question">Delete this session? This cannot be undone.</string>
 </resources>
