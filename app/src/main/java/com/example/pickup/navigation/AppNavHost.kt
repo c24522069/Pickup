@@ -48,7 +48,9 @@ import com.example.pickup.screens.TunerScreen
 import com.example.pickup.screens.TuningDetailScreen
 import com.example.pickup.screens.TuningLibraryScreen
 import com.example.pickup.viewmodel.PracticeLogViewModel
+import com.example.pickup.viewmodel.TunerViewModel
 import com.example.pickup.viewmodel.TuningViewModel
+import com.example.pickup.audio.AudioInput
 import kotlinx.serialization.Serializable
 
 // Routes. Each class is one destination; its properties are the arguments.
@@ -101,8 +103,11 @@ fun AppNavHost(
     val practiceViewModel: PracticeLogViewModel =
         viewModel(factory = PracticeLogViewModel.Factory(practiceRepository, tuningRepository))
 
-    val snackbarHostState = remember { SnackbarHostState() }
     val context = LocalContext.current
+    val tunerViewModel: TunerViewModel =
+        viewModel(factory = TunerViewModel.Factory(AudioInput(context.applicationContext)))
+
+    val snackbarHostState = remember { SnackbarHostState() }
     val tuningError by tuningViewModel.error.collectAsStateWithLifecycle()
     val practiceError by practiceViewModel.error.collectAsStateWithLifecycle()
 
@@ -165,7 +170,7 @@ fun AppNavHost(
                         )
                     }
                 }
-                composable<Tuner> { TunerScreen(tuningViewModel) }
+                composable<Tuner> { TunerScreen(tuningViewModel, tunerViewModel) }
                 composable<Metronome> { MetronomeScreen() }
                 composable<PracticeLog> {
                     PracticeLogScreen(

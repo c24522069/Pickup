@@ -43,7 +43,29 @@
 
     <!-- Tuner and metronome (placeholders until stages 3 and 4) -->
     <string name="tuner_title">Tuner</string>
-    <string name="tuner_coming_soon">The microphone tuner will be added next.</string>
+    <string name="string_target">String %1$d · target %2$.1f Hz</string>
+    <string name="pluck_any_string">Pluck any string</string>
+    <string name="flat">Flat</string>
+    <string name="in_tune">In tune</string>
+    <string name="sharp">Sharp</string>
+    <string name="status_waiting">Waiting for a note</string>
+    <string name="status_little_flat">A little flat, tune up</string>
+    <string name="status_too_flat">Too flat, tune up</string>
+    <string name="status_little_sharp">A little sharp, tune down</string>
+    <string name="status_too_sharp">Too sharp, tune down</string>
+    <string name="cents_and_hz">%1$+d cents · %2$.1f Hz</string>
+    <string name="cents_flat">%1$d cents flat</string>
+    <string name="cents_sharp">%1$d cents sharp</string>
+    <string name="tuned">tuned</string>
+    <string name="selected">selected</string>
+    <string name="listening">Listening. Pluck any string.</string>
+    <string name="locked_to_string">Tuning string %1$d only. Tap it again for automatic.</string>
+    <string name="mic_error">The microphone is not available. Close other apps using it and try again.</string>
+    <string name="mic_needed_title">Microphone needed</string>
+    <string name="mic_needed_body">Pickup listens to your guitar to tell you if each string is in tune. Nothing is recorded or saved.</string>
+    <string name="mic_denied_body">Microphone access is turned off. You can turn it on in Settings.</string>
+    <string name="allow_microphone">Allow microphone</string>
+    <string name="open_settings">Open settings</string>
     <string name="metronome_title">Metronome</string>
     <string name="metronome_coming_soon">The metronome will be added soon.</string>
 
