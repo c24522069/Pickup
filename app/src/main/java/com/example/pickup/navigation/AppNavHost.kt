@@ -49,6 +49,8 @@ import com.example.pickup.screens.TuningDetailScreen
 import com.example.pickup.screens.TuningLibraryScreen
 import com.example.pickup.viewmodel.PracticeLogViewModel
 import com.example.pickup.viewmodel.TunerViewModel
+import com.example.pickup.viewmodel.MetronomeViewModel
+import com.example.pickup.audio.Metronome as MetronomeEngine
 import com.example.pickup.viewmodel.TuningViewModel
 import com.example.pickup.audio.AudioInput
 import kotlinx.serialization.Serializable
@@ -105,6 +107,8 @@ fun AppNavHost(
     val context = LocalContext.current
     val tunerViewModel: TunerViewModel =
         viewModel(factory = TunerViewModel.Factory(AudioInput(context.applicationContext)))
+    val metronomeViewModel: MetronomeViewModel =
+        viewModel(factory = MetronomeViewModel.Factory(MetronomeEngine(context.applicationContext)))
 
     val snackbarHostState = remember { SnackbarHostState() }
     val tuningError by tuningViewModel.error.collectAsStateWithLifecycle()
@@ -170,7 +174,7 @@ fun AppNavHost(
                     }
                 }
                 composable<Tuner> { TunerScreen(tuningViewModel, tunerViewModel) }
-                composable<Metronome> { MetronomeScreen() }
+                composable<Metronome> { MetronomeScreen(metronomeViewModel) }
                 composable<PracticeLog> {
                     PracticeLogScreen(
                         viewModel = practiceViewModel,

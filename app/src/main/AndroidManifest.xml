@@ -4,6 +4,8 @@
 
     <!-- Tuner listens to the guitar through the microphone -->
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- Metronome pulses on each beat (granted automatically, no pop-up) -->
+    <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
         android:allowBackup="true"
